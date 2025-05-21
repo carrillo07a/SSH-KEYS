@@ -38,6 +38,19 @@ GITHUB:
 # 2) Go to GitHub in "Profile" --> "Settings" --> "SSH Keys" --> "Add key"
 ```
 
+PROFILE:
+
+```config
+# ~/.ssh/config
+Host github
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_personal
+  IdentitiesOnly yes
+
+# ssh -T github
+```
+
 # Troubleshooting Windows
 
 ```bash
